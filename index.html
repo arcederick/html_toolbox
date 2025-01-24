@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página HTML demonstrando todas as tags HTML em um único projeto.">
+    <meta name="author" content="Exemplo">
+    <meta name="keywords" content="HTML, tags, exemplo, tutorial">
+    <title>Toolbox HTML5 - Projeto Completo</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#flexbox">Flexbox</a></li>
+                <li><a href="#grid">Grid</a></li>
+                <li><a href="#texto">Texto</a></li>
+                <li><a href="#multimidia">Multimídia</a></li>
+                <li><a href="#tabela">Tabelas</a></li>
+                <li><a href="#formulario">Formulários</a></li>
+                <li><a href="#outros">Outros Exemplos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Texto -->
+        <section id="texto">
+            <h1>Sobre Textos</h1>
+            <p>
+                Em um parágrafo comum. Você também pode usar 
+                <b>negrito</b>, 
+                <i>itálico</i>, 
+                <u>sublinhado</u> 
+                ou <mark>marcação</mark> 
+                para destacar partes do texto.
+            </p>
+            <figure>
+                <img class="img" src="/static/img/texto.png" alt="Imagem de exemplo">
+                <figcaption>Código Fonte.</figcaption>
+            </figure>
+            <blockquote cite="https://www.exemplo.com">
+                "Este é um exemplo de citação longa, utilizando blockquote."
+            </blockquote>
+            <pre>
+                <code>
+                // Código de exemplo em JavaScript utilizando tag code
+                console.log("Olá, Mundo!");
+                </code>
+            </pre>
+            
+            <abbr title="HyperText Markup Language">HTML</abbr> Deixe seu mouse em cima de HTML
+            
+        </section>
+
+        <!-- Multimídia -->
+        <section id="multimidia">
+            <h1>Sobre Multimídia</h1>
+            <p>
+                Incluindo
+                <b>Video</b>, 
+                <i>Imagem</i>, 
+                <u>Audio</u> 
+                ou <mark>Iframe(null)</mark> 
+            </p>
+            
+            <video controls width="600">
+                <source 
+                src="/static/video/Better Days - Roa _ @RFM_NCM _ Royalty Free Music _ RFM - NCM _ No Copyright Music.mp4" 
+                type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+            
+            <figure>
+                <img class="img" src="/static/img/multimidia.png" alt="Imagem de exemplo">
+                <figcaption>Código Fonte</figcaption>
+            </figure>
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+                Seu navegador não suporta o elemento de áudio.
+            </audio>
+        </section>
+
+        <!-- Seção de Demonstração de Flexbox -->
+        <section id="flexbox">
+            <h1>Sobre Flexbox - CSS3</h1>
+            <!-- <p>Essa seção utiliza Flexbox para centralizar os elementos na tela.</p> -->
+            <p>Construindo.</p>
+            <div class="flex-container">
+                <div class="box green"></div>
+                <div class="box yellow"></div>
+                <div class="box blue"></div>
+                <div class="box pink"></div>
+            </div>
+        </section>
+
+        <!-- Seção de Demonstração de Grid -->
+        <section id="grid">
+            <h1>Sobre Grid - CSS3</h1>
+            <!-- <p>Essa seção demonstra o uso de Grid para organizar elementos.</p> -->
+            <p>Construindo.</p>
+            <div class="grid-container">
+                <div class="box green"></div>
+                <div class="box yellow"></div>
+                <div class="box blue"></div>
+                <div class="box pink"></div>
+            </div>
+        </section>
+
+        <!-- Seção Responsiva -->
+        <section id="responsivo">
+            <h1>Layout Responsivo</h1>
+            <!-- <p>
+                Redimensione sua janela para observar o comportamento do layout flexível. Este texto e os exemplos abaixo se ajustam para diferentes tamanhos de tela.
+            </p> -->
+            <p>Construindo.</p>
+            <div class="responsive-container">
+                <div class="box green"></div>
+                <div class="box orange"></div>
+                <div class="box purple"></div>
+                <div class="box cyan"></div>
+            </div>
+        </section>
+
+        <!-- Tabelas -->
+        <section id="tabela">
+            <h1>Tabelas</h1>
+            <p>Construindo.</p>
+            <table>
+                <caption>Exemplo de Tabela</caption>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Idade</th>
+                        <th>Profissão</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>João</td>
+                        <td>30</td>
+                        <td>Engenheiro</td>
+                    </tr>
+                    <tr>
+                        <td>Maria</td>
+                        <td>25</td>
+                        <td>Arquiteta</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Total: 2 registros</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <!-- Formulários -->
+        <section id="formulario">
+            <h1>Formulários</h1>
+            <p>Construindo.</p>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Informações Pessoais</legend>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                    <br>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                    <br>
+                    <label for="arquivo">Enviar arquivo:</label>
+                    <input type="file" id="arquivo" name="arquivo">
+                </fieldset>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <!-- Outros Exemplos -->
+        <section id="outros">
+            <h1>Outros Exemplos</h1>
+            <p>Construindo.</p>
+            <details>
+                <summary>Detalhes Expansíveis</summary>
+                <p>Este texto aparece quando você expande a seção.</p>
+            </details>
+            
+            
+            <br>
+            <!-- <progress value="60" max="100">60%</progress> -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 arcederick. Todos os direitos reservados.</p>
+        <address>
+            Um link direto para seu email <a href="mailto:arcederick.dev@gmail.com">Derick Arce</a>.
+        </address>
+    </footer>
+</body>
+
+</html>

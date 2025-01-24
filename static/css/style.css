@@ -1,0 +1,209 @@
+:root{
+    --main-bg: rgb(22, 22, 22);
+    --white: #f2f2f2;
+    /* background-color: ; */
+}
+
+/* Estilo geral */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    /* background-color: var(--main-bg); */
+   
+
+}
+header{
+    position: fixed;
+    width: 100%;
+    border: 1px solid var(--main-bg);
+    backdrop-filter: blur(4px);
+    
+}
+header, footer {
+    text-align: center;
+    padding: 20px;
+    
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--main-bg);
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para seções */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    padding: 20px;
+    border-bottom: 1px solid black;
+    
+}
+
+section h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: var(--main-bg);
+}
+
+section p {
+    margin: 20px;
+    color: var(--main-bg);
+}
+
+.img{
+    width: 600px;
+}
+
+#multimidia audio{
+    width: 40%;
+}
+
+/* Estilo para Flexbox */
+#flexbox .flex-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#flexbox .box {
+    width: 100px;
+    height: 100px;
+}
+
+.green {
+    background-color: #4CAF50;
+}
+
+.yellow {
+    background-color: #FFC107;
+}
+
+.blue {
+    background-color: #03A9F4;
+}
+
+.pink {
+    background-color: #E91E63;
+}
+
+/* Estilo para Grid */
+#grid .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Layout responsivo */
+#responsivo .responsive-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+#responsivo .box {
+    flex: 1 1 calc(33.333% - 20px);
+    min-width: 100px;
+    height: 100px;
+}
+
+.orange {
+    background-color: #FF5722;
+}
+
+.purple {
+    background-color: #9C27B0;
+}
+
+.cyan {
+    background-color: #00BCD4;
+}
+
+/* Tabelas */
+#tabela table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#tabela th, #tabela td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#tabela th {
+    background-color: #f2f2f2;
+}
+
+#tabela caption {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Formulários */
+#formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#formulario input, #formulario textarea, #formulario button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#formulario button {
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+
+#formulario button:hover {
+    background-color: #0056b3;
+}
+
+/* Outros exemplos */
+details {
+    margin: 20px 0;
+}
+
+progress {
+    width: 100%;
+}
